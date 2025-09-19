@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #222;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 100%;
+    max-width: 450px;
+    background: linear-gradient(135deg, #0d7690, #6dd5ed);
+
+    
+
+
+    color: #fff;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #838889;
+    border-radius: 20px;
+    padding: 45px 35px;
+    text-align: center;
+}
+.searsh{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.searsh input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #37474F;
+    padding: 10px 25px;
+    height: 55px;
+    flex: 1;
+    border-radius: 30px;
+    margin-right: 18px;
+    font-size: 18px;
+}
+.searsh button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 57px;
+    height: 57px;
+    cursor: pointer;
+}
+.searsh button img{
+    width: 18px;
+
+}
+.weather-icon{
+    width: 145px;
+    margin-top: 30px;
+}
+.weather h1{
+    font-size: 80px;
+    font-weight: 700;
+    font-size: 90px;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: -10px;
+    font-size: 40px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    margin-top: 50px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-weight: 500;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+.error{
+    text-align: left;    
+    margin-top: 20px;
+    display: none;
+}
+.error p {
+    font-size: 22px;
+    margin-left: 20px;
+    font-weight: 700;
+   text-shadow:0 0 5px #ffffff, 0 0 10px #949494 ;
+    
+    margin-bottom: -20px;
+}
+.weather{
+    display: none;
+}
