@@ -112,3 +112,59 @@ section{
 .weather{
     display: none;
 }
+
+@media (max-width: 480px) {
+    .card {
+        padding: 25px 15px;
+        max-width: 95%;
+    }
+
+    .searsh {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .searsh input {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .searsh button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .weather h1 {
+        font-size: 60px;
+    }
+
+    .weather h2 {
+        font-size: 30px;
+    }
+
+    .details {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 15px;
+        margin-top: 30px;
+    }
+
+    .col {
+        margin-bottom: 15px;
+    }
+
+    .weather-icon {
+        width: 120px;
+        margin-top: 20px;
+    }
+
+    .error p {
+        font-size: 18px;
+        margin-left: 15px;
+    }
+}
+
