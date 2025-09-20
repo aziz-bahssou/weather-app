@@ -17,23 +17,22 @@ section{
 
 .card{
     width: 100%;
-    max-width: 450px;
-    background: linear-gradient(135deg, #0d7690, #6dd5ed);
-
-    
-
-
+    max-width: 410px;
+    background: linear-gradient(133deg, #4EE2EC, #095151);
     color: #fff;
-    text-shadow: 0 0 5px #ffffff, 0 0 10px #838889;
+    text-shadow: 0 0 1px #ffffff, 0 0 5px #838889;
     border-radius: 20px;
-    padding: 45px 35px;
+    padding: 40px 30px;
     text-align: center;
+    transition: background 0.1s ease;
 }
+
 .searsh{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .searsh input{
     border: 0;
@@ -52,33 +51,54 @@ section{
     outline: 0;
     background: #ebfffc;
     border-radius: 50%;
-    width: 57px;
-    height: 57px;
+    width: 56px;
+    height: 56px;
     cursor: pointer;
 }
 .searsh button img{
-    width: 18px;
+    padding-top: 5px;
+    width: 19px;
+    transition: transform 0.3s ease;
 
+
+}
+.searsh button img:hover{
+    transform: scale(1.2);
+}
+.icons-png{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.time-icon{
+    width: 70px;
+    margin-top: 30px;
 }
 .weather-icon{
     width: 145px;
     margin-top: 30px;
+    margin-left: -5px;
+    
 }
 .weather h1{
+   
+    font-weight: 600;
     font-size: 80px;
-    font-weight: 700;
-    font-size: 90px;
 }
 .weather h2{
-    font-size: 45px;
+    
     font-weight: 600;
     margin-top: -10px;
-    font-size: 40px;
+    font-size: 38px;
 }
 .details{
     display: flex;
-    align-items: center;
     justify-content: space-between;
+
+    align-items: center;
+    
     padding: 0 25px;
     margin-top: 50px;
 }
@@ -102,16 +122,26 @@ section{
     display: none;
 }
 .error p {
-    font-size: 22px;
+    font-size: 19px;
     margin-left: 20px;
-    font-weight: 700;
-   text-shadow:0 0 5px #ffffff, 0 0 10px #949494 ;
+    font-weight: 600;
+   text-shadow:0 0 1px #ffffff, 0 0 1px #949494 ;
     
     margin-bottom: -20px;
 }
-.weather{
-    display: none;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 480px) {
     .card {
