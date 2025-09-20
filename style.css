@@ -7,14 +7,12 @@
 body{
     background: #222;
 }
-
 section{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .card{
     width: 100%;
     max-width: 410px;
@@ -24,9 +22,8 @@ section{
     border-radius: 20px;
     padding: 40px 30px;
     text-align: center;
-    transition: background 0.1s ease;
+    transition: background 0.3s ease;
 }
-
 .searsh{
     width: 100%;
     display: flex;
@@ -41,7 +38,8 @@ section{
     color: #37474F;
     padding: 10px 25px;
     height: 55px;
-    flex: 1;
+    flex: 1 1 auto;
+    min-width: 0;
     border-radius: 30px;
     margin-right: 18px;
     font-size: 18px;
@@ -54,13 +52,12 @@ section{
     width: 56px;
     height: 56px;
     cursor: pointer;
+    flex-shrink: 0;
 }
 .searsh button img{
     padding-top: 5px;
     width: 19px;
     transition: transform 0.3s ease;
-
-
 }
 .searsh button img:hover{
     transform: scale(1.2);
@@ -70,35 +67,29 @@ section{
     justify-content:center;
     align-items: center;
     flex-wrap: wrap;
-
 }
 .time-icon{
     width: 70px;
     margin-top: 30px;
 }
 .weather-icon{
-    width: 145px;
-    margin-top: 30px;
-    margin-left: -5px;
-    
+    width: clamp(100px, 25vw, 145px);
+    margin: 30px auto 0;
 }
 .weather h1{
-   
     font-weight: 600;
-    font-size: 80px;
+    font-size: clamp(40px, 8vw, 80px);
 }
 .weather h2{
-    
     font-weight: 600;
     margin-top: -10px;
-    font-size: 38px;
+    font-size: clamp(20px, 5vw, 38px);
 }
 .details{
     display: flex;
     justify-content: space-between;
-
     align-items: center;
-    
+    flex-wrap: wrap;
     padding: 0 25px;
     margin-top: 50px;
 }
@@ -107,6 +98,8 @@ section{
     align-items: center;
     text-align: left;
     font-weight: 500;
+    flex: 1 1 45%;
+    margin-bottom: 15px;
 }
 .col img{
     width: 40px;
@@ -125,35 +118,18 @@ section{
     font-size: 19px;
     margin-left: 20px;
     font-weight: 600;
-   text-shadow:0 0 1px #ffffff, 0 0 1px #949494 ;
-    
+    text-shadow:0 0 1px #ffffff, 0 0 1px #949494 ;
     margin-bottom: -20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 480px) {
     .card {
         padding: 25px 15px;
         max-width: 95%;
     }
-
     .searsh {
         flex-direction: column;
         align-items: stretch;
     }
-
     .searsh input {
         margin-right: 0;
         margin-bottom: 15px;
@@ -162,39 +138,31 @@ section{
         font-size: 16px;
         padding: 10px 20px;
     }
-
     .searsh button {
         width: 50px;
         height: 50px;
     }
-
     .weather h1 {
         font-size: 60px;
     }
-
     .weather h2 {
         font-size: 30px;
     }
-
     .details {
         flex-direction: column;
         align-items: flex-start;
         padding: 0 15px;
         margin-top: 30px;
     }
-
     .col {
         margin-bottom: 15px;
     }
-
     .weather-icon {
         width: 120px;
         margin-top: 20px;
     }
-
     .error p {
         font-size: 18px;
         margin-left: 15px;
     }
 }
-

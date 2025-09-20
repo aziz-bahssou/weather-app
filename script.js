@@ -1,3 +1,8 @@
+
+
+
+
+
 const apiKey = "879ff44d70b99407e993b8d501f50677";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 const searchBox = document.querySelector('.searsh input');
@@ -21,7 +26,7 @@ async function checkWdeather(city){
     document.querySelector('.city').innerHTML = data.name;
     document.querySelector('.temp').innerHTML = Math.round(data.main.temp) + "°C";
     document.querySelector('.humidity').innerHTML = data.main.humidity + "%";
-    document.querySelector('.wind').innerHTML = data.wind.speed + " km/h";
+    document.querySelector('.wind').innerHTML = Math.round(data.wind.speed) + " km/h";
 
     const dt = data.dt;
     const sunrise = data.sys.sunrise;
@@ -50,7 +55,7 @@ async function checkWdeather(city){
     
     if(weather == 'Clouds') icon = 'images/clouds.png';
     else if(weather == 'Clear') icon = 'images/clear.png';
-    else if(weather == 'Drizzle') icon = 'images/drizzele.png';
+    else if(weather == 'Drizzle') icon = 'images/drizzle.png';
     else if(weather == 'Mist') icon = 'images/mist.png';
     else if(weather == 'Snow') icon = 'images/snow.png';
     else if(weather == 'Rain') icon = 'images/rain.png';
