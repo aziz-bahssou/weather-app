@@ -29,7 +29,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 .searsh input{
     border: 0;
@@ -38,7 +38,6 @@ section{
     color: #37474F;
     padding: 10px 25px;
     height: 55px;
-    flex: 1 1 auto;
     min-width: 0;
     border-radius: 30px;
     margin-right: 18px;
@@ -52,7 +51,7 @@ section{
     width: 56px;
     height: 56px;
     cursor: pointer;
-    flex-shrink: 0;
+    
 }
 .searsh button img{
     padding-top: 5px;
@@ -127,20 +126,26 @@ section{
         max-width: 100%;
     }
     .searsh {
-        flex-direction: column;
-        align-items: stretch;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
     }
     .searsh input {
-        margin-right: 10px;
+        margin-right: 6px;
         margin-bottom: 15px;
         width: 80%;
         height: 50px;
         font-size: 16px;
-        padding: 6px 14px;
+        padding: 6px 10px;
     }
     .searsh button {
-        width: 50px;
-        height: 50px;
+        width: 56px;
+        height: 56px;
+        cursor: pointer;
+        margin-top: -11px;
+     
     }
     .weather h1 {
         font-size: 55px;
@@ -164,7 +169,7 @@ section{
         width: 110px;
         margin-top: 20px;
     }
-    .error p {/
+    .error p {
         font-size: 18px;
         margin-left: 15px;
     }
