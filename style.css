@@ -18,7 +18,7 @@ section{
 .card{
     width: 100%;
     max-width: 410px;
-    background: linear-gradient(133deg, #4EE2EC, #095151);
+    background: linear-gradient(133deg, #3B9C9C, #5b548a);
     color: #fff;
     text-shadow: 0 0 1px #ffffff, 0 0 5px #838889;
     border-radius: 20px;

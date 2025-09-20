@@ -57,7 +57,7 @@ async function checkWdeather(city){
 
    
     cards.forEach(card => {
-        card.style.background = 'linear-gradient(133deg, #4EE2EC, #095151)';
+        card.style.background = 'linear-gradient(133deg, #3B9C9C, #5b548a)';
     });
 }
 
