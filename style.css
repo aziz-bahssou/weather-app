@@ -71,6 +71,12 @@ section{
     width: 70px;
     margin-top: 30px;
 }
+.time{
+    margin-top: 10px;
+}
+.time img{
+    width: 30px;
+}
 .weather-icon{
     width: clamp(100px, 25vw, 145px);
     margin: 30px auto 0;
@@ -122,8 +128,11 @@ section{
 }
 @media (max-width: 480px) {
     .card {
-        padding: 20px 10px;
+        border-radius: 0;
+        padding: 100px 10px;
         max-width: 100%;
+        height: 100%;
+        padding-top: ;
     }
     .searsh {
         width: 100%;
@@ -152,6 +161,12 @@ section{
     }
     .weather h2 {
         font-size: 26px;
+    }
+    .time{
+        margin-top: 10px;
+        font-size: 18px;
+             
+        font-weight: 500;
     }
     .details {
         display: flex;

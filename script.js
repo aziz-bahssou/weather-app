@@ -9,12 +9,15 @@ const searchBox = document.querySelector('.searsh input');
 const searchBtn = document.querySelector('.searsh button');
 const weatherIcon = document.querySelector('.weather-icon');
 const errorMsg = document.querySelector('.error-rpns');
- const cards = document.querySelectorAll('.card');
+const cards = document.querySelectorAll('.card');
+const imgTime = document.getElementById(timePng)
 
 async function checkWdeather(city){
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
     const data = await response.json();
-    console.log(data);
+    console.log(data)
+    
+    
 
     if (!response.ok || data.cod === "404"){
         errorMsg.textContent = 'Invalid city name !'; 
@@ -27,6 +30,13 @@ async function checkWdeather(city){
     document.querySelector('.temp').innerHTML = Math.round(data.main.temp) + "°C";
     document.querySelector('.humidity').innerHTML = data.main.humidity + "%";
     document.querySelector('.wind').innerHTML = Math.round(data.wind.speed) + " km/h";
+
+    let localTime = new Date((data.dt + data.timezone) *1000);
+    let timeString =localTime.toLocaleDateString("en-Us" , {
+        
+    });
+    document.querySelector(".time").textContent =   timeString   ;
+
 
     const dt = data.dt;
     const sunrise = data.sys.sunrise;
@@ -71,6 +81,7 @@ weatherIcon.src = icon;
 
     document.querySelector('.weather').style.display = 'block';
 }
+
 
           
 
